@@ -1,0 +1,23 @@
+/* Blur for the Guest Gate plugin */
+
+/* More blur --> change the 3's to a higher number */
+/* Less blur --> change the 3's to a lower number */
+
+html.gg-active #main-outlet {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+/* Background transparency for the Guest Gate modal */
+/* Darker --> change the 0.3's / 30 to a higher number */
+/* Lighter --> change the 0.3's / 30 to a lower number */
+
+html.gg-active .modal-backdrop,
+html.gg-active .modal-backdrop.fade.in {
+  animation: fade 0.3s;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
